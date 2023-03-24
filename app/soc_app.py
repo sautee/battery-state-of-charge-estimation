@@ -13,7 +13,7 @@ from tensorflow.keras import layers
 import os 
 
 
-saved_models = 'Saved_Models/'
+saved_models = '../pre-trained/'
 
 def list_saved_models(path):
     for f in os.listdir(path):
