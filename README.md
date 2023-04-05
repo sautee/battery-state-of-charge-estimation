@@ -20,10 +20,10 @@ To get started
 - Download datasets, locate them under the 'datasets' folder.
 - Convert Panasonic .mat files to .csv.
 - Run training notebooks, or use pre-trained models.
-- Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data.
+- Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data `streamlit run soc_app.py`.
 
 ## Environment Setup
-Using Anaconda recommended. Create a `battery-soc` environment by running the following command.
+Recommend using Anaconda. Create a `battery-soc` environment by running the following command.
 ````
 conda env create -f environment.yml
 ````
