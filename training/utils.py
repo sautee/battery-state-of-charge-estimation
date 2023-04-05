@@ -218,6 +218,41 @@ def panasonic_create_dataset(file_paths, drive_cycle_files, vi_averages = True, 
         
     return merged, merged_norm
 
+def app_create_dataset(path, vi_averages = True, resample_1hz = True, minmax_norm = True):
+    
+    cycle = pd.read_csv(path, index_col=0, parse_dates=True)
+    
+    if resample_1hz:
+        cycle = cycle.resample('1S').first()
+    
+    # calculate 'Power'
+    cycle['Power'] = cycle['Voltage'] * cycle['Current']
+    
+    if 'Capacity' in cycle:
+        parameters = cycle[['Voltage', 'Current', 'Temperature', 'Power', 'Capacity']].copy()
+
+    else:
+        parameters = cycle[['Voltage', 'Current', 'Temperature', 'Power']].copy()
+
+    # calculate 'Voltage', 'Current' and 'Power' averages
+    # 500 second rolling window which translates to rougly 500 data points for resampled data and 5000 for raw data
+    rolling_window = 5000
+    if vi_averages and resample_1hz:
+        rolling_window = int(rolling_window / 10)
+
+    if vi_averages:
+        parameters['Voltage Average'] = parameters['Voltage'].rolling(rolling_window).mean()
+        parameters['Current Average'] = parameters['Current'].rolling(rolling_window).mean()
+        parameters['Power Average'] = parameters['Power'].rolling(rolling_window).mean()
+        
+    # drop rows with NaN or empty values in them, reset the index to reflect
+    parameters.dropna(inplace=True)
+    parameters.reset_index(drop=True, inplace=True)
+            
+    parameters_norm = normalization(parameters, minmax_norm)
+        
+    return parameters, parameters_norm
+
 # create_lstm_dataset - https://github.com/KeiLongW/battery-state-estimation
 def create_lstm_dataset(dataset, steps):
     dataset.drop(['Power', 'Power Average'], axis=1, inplace=True)
