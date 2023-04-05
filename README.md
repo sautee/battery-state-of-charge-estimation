@@ -1,10 +1,32 @@
-# battery-state-of-charge-estimation
+# Battery State of Charge Prediction
+
+Predict battery state of charge (SOC) using machine learning. Models are built using Tensorflow and trained on [LG 18650HG2 Li-ion Battery Data](https://data.mendeley.com/datasets/cp3473x7xv/3) and [Panasonic 18650PF Li-ion Battery Data](https://data.mendeley.com/datasets/wykht8y7tg/1) datasets.
+
+## Repository Contents
+'datasets/': Download datasets from the links abouve load into this folder as 'LG_18650HG2' and 'Panasonic_18650PF'. 
+'training/': This folder contains Jupyter notebooks used to analyze and train the DNN, CNN, and LSTM models.
+'training/model_evals': Compare model performance.
+'pre-trained/': This folder contains pre-trained DNN, CNN, and LSTM models that can be used for state of charge prediction.
+'app/': This folder contains a Streamlit app that allows users to play with their own data using the pre-trained models.
+
+## Convert MAT to CSV
+Use the '/training/panasonic/convert_mat_to_csv.ipynb' notebook to convert .mat files to .csv. Useful for the Panasonic dataset where only .mat files are available.
+
+## Usage
+To get started
+- Clone this repository to your local machine.
+- Download datasets, locate them under the 'datasets' folder.
+- Convert Panasonic .mat files to .csv.
+- Run training notebooks, or use pre-trained models.
+- Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data.
 
 
-The State of Charge (SOC) performs the same function as the fuel gauge in a fossil fuel powered vehicle, indicating how much energy is remaining inside a battery to power a vehicle. Properly measuring SOC is a difficult undertaking since it cannot be measured directly due to non-linear, time-varying properties and electrochemical processes. Moreover, battery SOC is impacted by other factors such as age, temperature variations, charge discharge cycles, and so on. This repository showcases machine learning to estimate the State of Charge of an LG HG2 18650 lithium-ion cell using publicly available battery test data from McMaster University in Ontario, Canada. Several experiments are run against Deep Neural Networks (DNN), Convolutional Neural Networks (CNN) and Long Short-Term Memory Networks (LSTM). The prediction results from these are then compared to each other.
-
-
-## Datasets
-LG HG2 18659 Dataset - https://data.mendeley.com/datasets/cp3473x7xv/3
-
+## Acknowledgements
+### Datasets
 Kollmeyer, Philip; Vidal, Carlos; Naguib, Mina; Skells, Michael  (2020), “LG 18650HG2 Li-ion Battery Data and Example Deep Neural Network xEV SOC Estimator Script”, Mendeley Data, V3, doi: 10.17632/cp3473x7xv.3
+
+Kollmeyer, Phillip (2018), “Panasonic 18650PF Li-ion Battery Data”, Mendeley Data, V1, doi: 10.17632/wykht8y7tg.1
+
+### LSTM model architecture, dataset preparation
+[KeiLongW/battery-state-estimation](https://github.com/KeiLongW/battery-state-estimation)
+
