@@ -1,6 +1,6 @@
 # Battery State of Charge Prediction
 
-Predict battery state of charge (SOC) using machine learning + Streamlit web app. 
+Predict battery state of charge (SOC) using machine learning. Use the Streamlit web app easily browse available models and predict SOC on cell dischrage data.
 
 Models are built using Tensorflow and trained on ***[LG 18650HG2](https://data.mendeley.com/datasets/cp3473x7xv/3)*** and ***[Panasonic 18650PF](https://data.mendeley.com/datasets/wykht8y7tg/1)*** Li-ion battery datasets.
 
@@ -20,9 +20,7 @@ To get started
 - Download datasets, locate them under the 'datasets' folder.
 - Convert Panasonic .mat files to .csv.
 - Run training notebooks, or use pre-trained models.
-- Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data
-
-`streamlit run soc_app.py`.
+- Run Streamlit app `streamlit run soc_app.py`.
 
 ## Environment Setup
 Recommend using Anaconda. Create a `battery-soc` environment by running the following command.
