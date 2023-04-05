@@ -35,5 +35,23 @@ Kollmeyer, Philip; Vidal, Carlos; Naguib, Mina; Skells, Michael  (2020), “LG 1
 Kollmeyer, Phillip (2018), “Panasonic 18650PF Li-ion Battery Data”, Mendeley Data, V1, doi: 10.17632/wykht8y7tg.1
 
 ### LSTM model architecture, dataset preparation
-[KeiLongW/battery-state-estimation](https://github.com/KeiLongW/battery-state-estimation)
+*Li-Ion Batteries State-of-Charge Estimation Using Deep LSTM at Various Battery Specifications and Discharge Cycles* [[DOI](https://doi.org/10.1145/3462203.3475878)]
+
+```
+@inproceedings{10.1145/3462203.3475878,
+author = {Wong, Kei Long and Bosello, Michael and Tse, Rita and Falcomer, Carlo and Rossi, Claudio and Pau, Giovanni},
+title = {Li-Ion Batteries State-of-Charge Estimation Using Deep LSTM at Various Battery Specifications and Discharge Cycles},
+year = {2021},
+isbn = {9781450384780},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3462203.3475878},
+doi = {10.1145/3462203.3475878},
+booktitle = {Proceedings of the Conference on Information Technology for Social Good},
+pages = {85–90},
+numpages = {6},
+location = {Roma, Italy},
+series = {GoodIT '21}
+}
+```
 
