@@ -21,6 +21,7 @@ To get started
 - Convert Panasonic .mat files to .csv.
 - Run training notebooks, or use pre-trained models.
 - Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data
+
 `streamlit run soc_app.py`.
 
 ## Environment Setup
