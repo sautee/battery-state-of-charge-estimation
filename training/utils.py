@@ -218,6 +218,7 @@ def panasonic_create_dataset(file_paths, drive_cycle_files, vi_averages = True, 
         
     return merged, merged_norm
 
+# create_lstm_dataset - https://github.com/KeiLongW/battery-state-estimation
 def create_lstm_dataset(dataset, steps):
     dataset.drop(['Power', 'Power Average'], axis=1, inplace=True)
     train_y = dataset.pop('Capacity').to_numpy()
@@ -239,6 +240,7 @@ def create_lstm_dataset(dataset, steps):
         
     return x, y
 
+# keep_only_y_end - https://github.com/KeiLongW/battery-state-estimation
 def keep_only_y_end(y, step):
     return y[:,::step]
             
