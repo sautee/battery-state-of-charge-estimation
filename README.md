@@ -1,6 +1,6 @@
 # Battery State of Charge Prediction
 
-Predict battery state of charge (SOC) using machine learning. 
+Predict battery state of charge (SOC) using machine learning + Streamlit web app. 
 
 Models are built using Tensorflow and trained on ***[LG 18650HG2](https://data.mendeley.com/datasets/cp3473x7xv/3)*** and ***[Panasonic 18650PF](https://data.mendeley.com/datasets/wykht8y7tg/1)*** Li-ion battery datasets.
 
