@@ -22,6 +22,12 @@ To get started
 - Run training notebooks, or use pre-trained models.
 - Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data.
 
+## Environment Setup
+Using Anaconda recommended.
+````
+conda env create -f environment.yml
+````
+
 
 ## Acknowledgements
 ### Datasets
