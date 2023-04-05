@@ -2,17 +2,17 @@
 
 Predict battery state of charge (SOC) using machine learning. 
 
-Models are built using Tensorflow and trained on ***[LG 18650HG2 Li-ion Battery Data](https://data.mendeley.com/datasets/cp3473x7xv/3)*** and ***[Panasonic 18650PF Li-ion Battery Data](https://data.mendeley.com/datasets/wykht8y7tg/1)*** datasets.
+Models are built using Tensorflow and trained on ***[LG 18650HG2](https://data.mendeley.com/datasets/cp3473x7xv/3)*** and ***[Panasonic 18650PF](https://data.mendeley.com/datasets/wykht8y7tg/1)*** Li-ion battery datasets.
 
 ## Repository Contents
-- `datasets/`: Download datasets from the links abouve load into this folder as `LG_18650HG2` and `Panasonic_18650PF`. 
-- `training/`: This folder contains Jupyter notebooks used to analyze and train the DNN, CNN, and LSTM models.
+- `datasets/`: Download datasets and load into this folder as 'LG_18650HG2' and 'Panasonic_18650PF'. 
+- `training/`: Jupyter notebooks to analyze and train DNN, CNN, and LSTM models.
 - `training/model_evals`: Compare model performance.
-- `pre-trained/`: This folder contains pre-trained DNN, CNN, and LSTM models that can be used for state of charge prediction.
-- `app/`: This folder contains a Streamlit app that allows users to play with their own data using the pre-trained models.
+- `pre-trained/`: Pre-trained DNN, CNN, and LSTM models.
+- `app/`: Streamlit app that allows users to play with their own data using the pre-trained models.
 
 ## Convert MAT to CSV
-Use the `/training/panasonic/convert_mat_to_csv.ipynb` notebook to convert .mat files to .csv. Useful for the Panasonic dataset where only .mat files are available.
+Use the `/training/panasonic/convert_mat_to_csv.ipynb` notebook to convert MAT files to CSV. Useful for the Panasonic dataset where only MAT files are available.
 
 ## Usage
 To get started
