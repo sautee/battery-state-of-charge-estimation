@@ -23,11 +23,10 @@ To get started
 - Or, run Streamlit app to easily browse available models and predict SOC on cell dischrage data.
 
 ## Environment Setup
-Using Anaconda recommended.
+Using Anaconda recommended. Create a `battery-soc` environment by running the following command.
 ````
 conda env create -f environment.yml
 ````
-
 
 ## Acknowledgements
 ### Datasets
