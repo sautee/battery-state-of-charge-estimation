@@ -60,7 +60,7 @@ def main() -> None:
         resample_1Hz = False
 
     with st.expander("Getting Started"):
-        st.write(Path("README.md").read_text())
+        st.write(Path("getstarted.md").read_text())
 
     st.subheader("Upload cell discharge cycle CSV file")
     uploaded_data = st.file_uploader(

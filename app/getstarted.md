@@ -11,8 +11,10 @@
 - The 'Capacity' column is optional and only used to compare Predicted SOC with True SOC. 
     
 - Once pre-processing is complete, prediction is run using the selected SOC model.
+
+- Upload a different CSV file, choose another example file or select a different SOC model.
     
-- Example file format -
+- File format example -
     
 | Time Stamp             | Step | Voltage | Current  | Temperature | Capacity    | Cycle       |
 |------------------------|------|---------|----------|-------------|-------------|-------------|
