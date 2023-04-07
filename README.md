@@ -21,6 +21,7 @@ To get started
 - Convert Panasonic .mat files to .csv.
 - Run training notebooks, or use pre-trained models.
 - Run Streamlit app `streamlit run soc_app.py`.
+- To deploy to Streamlit Cloud visit [soc-cloud-app](https://github.com/sautee/soc-cloud-app).
 
 ## Environment Setup
 Using 'pip install'. Run the following command to install requirements.
