@@ -37,6 +37,7 @@ conda env create -f environment.yml
 ## Acknowledgements
 ### Contributors
 Talha K, Nemesh W, Xili D
+
 Memorial Univserity of Newfoundland
 
 ### Datasets
