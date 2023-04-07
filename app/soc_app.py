@@ -90,7 +90,7 @@ def main() -> None:
         dataset['Current'][:100000].plot(ax=axes[1], color='orange'); axes[1].legend(loc='best'); axes[1].get_xaxis().set_visible(False);
         dataset['Voltage Average'].plot(ax=axes[2], color='blue'); axes[2].legend(loc='best'); axes[2].get_xaxis().set_visible(False);
         dataset['Current Average'].plot(ax=axes[3], color='orange'); axes[3].legend(loc='best'); axes[3].get_xaxis().set_visible(False);
-        dataset['Temperature'][:100000].plot(ax=axes[4], color='green'); axes[2].legend(loc='best'); axes[2].get_xaxis().set_visible(False);
+        dataset['Temperature'][:100000].plot(ax=axes[4], color='green'); axes[4].legend(loc='best'); axes[4].get_xaxis().set_visible(False);
         st.pyplot(fig)
         st.markdown("### Statistics")
         st.write(dataset.describe().transpose())
