@@ -20,7 +20,7 @@ To get started
 - Download datasets, locate them under the 'datasets' folder.
 - Convert Panasonic .mat files to .csv.
 - Run training notebooks, or use pre-trained models.
-- Run Streamlit app `streamlit run soc_app.py`.
+- Navigate to `app` folder and run Streamlit app `streamlit run soc_app.py`.
 - To deploy to Streamlit Cloud visit [soc-cloud-app](https://github.com/sautee/soc-cloud-app).
 
 ## Environment Setup
@@ -35,6 +35,10 @@ conda env create -f environment.yml
 ```
 
 ## Acknowledgements
+### Contributors
+Talha K, Nemesh W, Xili D
+Memorial Univserity of Newfoundland
+
 ### Datasets
 Kollmeyer, Philip; Vidal, Carlos; Naguib, Mina; Skells, Michael  (2020), “LG 18650HG2 Li-ion Battery Data and Example Deep Neural Network xEV SOC Estimator Script”, Mendeley Data, V3, doi: 10.17632/cp3473x7xv.3
 
