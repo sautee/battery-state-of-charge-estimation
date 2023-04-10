@@ -69,7 +69,7 @@ def main() -> None:
 
     if uploaded_data is None:
         uploaded_data = example_file
-        st.info("Using example '{}'. Upload a file above to use your own data".format(uploaded_data))
+        st.info("Using example '{}'. Upload a file to use your own data.".format(uploaded_data))
     else:
         st.success("Uploaded your file!")
 
