@@ -34,6 +34,9 @@ Using Anaconda. Create a `battery-soc` environment by running the following comm
 conda env create -f environment.yml
 ```
 
+## Contributors
+Andrew C, Talha K, Nemesh W, Xili D -- Memorial Univserity of Newfoundland
+
 ## Other Research Areas
 **Battery Surface Temperature Estimation** - using the Panasonic 18650PF dataset.
 
@@ -44,11 +47,8 @@ Transactions on Transportation Electrification, p. 12, 2022.
 **Predicting Battery Remaining Useful Life** - using data from [TRI](https://data.matr.io/1/projects/5c48dd2bc625d700019f3204), [NASA Prognostics](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository), [UNIBO PowerTools Dataset](https://data.mendeley.com/datasets/n6xg5fzsbv/1).
 
 [petermattia/predicting-battery-lifetime](https://github.com/petermattia/predicting-battery-lifetime)
+
 [michael/bosello/battery-rul-estimation](https://github.com/MichaelBosello/battery-rul-estimation)
-
-
-## Contributors
-Andrew C, Talha K, Nemesh W, Xili D -- Memorial Univserity of Newfoundland
 
 ## Acknowledgements
 Kollmeyer, Philip; Vidal, Carlos; Naguib, Mina; Skells, Michael  (2020), “LG 18650HG2 Li-ion Battery Data and Example Deep Neural Network xEV SOC Estimator Script”, Mendeley Data, V3, doi: 10.17632/cp3473x7xv.3
