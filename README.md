@@ -38,7 +38,7 @@ conda env create -f environment.yml
 Andrew C, Talha K, Nemesh W, Xili D -- Memorial Univserity of Newfoundland
 
 ## Other Research Areas
-**Battery Surface Temperature Estimation** - using the Panasonic 18650PF dataset.
+**Battery Surface Temperature Estimation** - using the [Panasonic 18650PF](https://data.mendeley.com/datasets/wykht8y7tg/1) used here.
 
 M. Naguib, P. Kollmeyer and A. Emadi, "Application of Deep Neural Networks for Lithium Ion 
 Battery Surface Temperature Estimation Under Driving and Fast Charge Conditions," IEEE 
